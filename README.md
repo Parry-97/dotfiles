@@ -1,5 +1,5 @@
 # My Linux Mint Dotfiles
 * Using Awesome Window Manager
-* Terminal : Alacritty
+* Terminal : Alacritty (custom dracula theme)
 * Text Editor: Neovim (basic config)
-* Using Tmux
+* Using Tmux (custom dracula theme)

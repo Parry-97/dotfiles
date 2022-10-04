@@ -55,7 +55,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-beautiful.useless_gap = 15
+beautiful.useless_gap = 10
 beautiful.tasklist_font = "JetbrainsMono Nerd Font Mono 9"
 beautiful.taglist_font = "JetbrainsMono Nerd Font Mono 9"
 
@@ -630,7 +630,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 -- 
 -- Autostart Applications
-awful.spawn.with_shell("compton")
+--awful.spawn.with_shell("compton")
 awful.spawn.with_shell("xinput -set-prop 13 373 1")
---awful.spawn.with_shell("picom")
+awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nitrogen --restore")

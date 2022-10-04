@@ -3,7 +3,7 @@ configuration {
   display-window: "Windows:";
   drun-display-format: "{name}";
   font: "JetbrainsMono Nerd Font Mono 22";
-  modi: "window,run,drun";
+  modi: "drun,filebrowser,ssh";
   show-icons: true;
   icon-theme: "Papirus";
 }

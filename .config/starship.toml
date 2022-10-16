@@ -1,0 +1,7 @@
+# Get editor completions based on the config schema
+# Use custom format
+#format = """
+#[┌───────────────────>](bold green)
+#[│](bold green)$directory$rust$package
+#[└─>](bold green) """
+command_timeout = 1000

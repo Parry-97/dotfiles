@@ -122,6 +122,7 @@ fi
 #Custom Aliases
 alias ide='source ~/.local/bin/custom/ide.sh'
 alias l='exa -la --icons'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

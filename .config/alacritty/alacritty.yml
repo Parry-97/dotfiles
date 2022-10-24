@@ -117,7 +117,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetbrainsMono Nerd Font Mono
+    family: JetBrainsMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -128,7 +128,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetbrainsMono Nerd Font Mono
+    family: JetBrainsMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -139,8 +139,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetbrainsMono Nerd Font Mono
-
+    family: JetBrainsMono Nerd Font
     # The `style` can be specified to pick a specific face.
     style: Italic
 
@@ -153,7 +152,7 @@ font:
     family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: JetbrainsMono Nerd Font Mono
+    style:  JetBrainsMono Nerd Font
 
   # Point size
   size: 10.5

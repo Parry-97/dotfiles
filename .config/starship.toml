@@ -5,3 +5,8 @@
 #[│](bold green)$directory$rust$package
 #[└─>](bold green) """
 command_timeout = 1000
+
+
+[conda]
+ignore_base = false
+#symbol = "🐍 "

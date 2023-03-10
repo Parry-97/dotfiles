@@ -120,9 +120,13 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 #Custom Aliases
-alias ide='source ~/.local/bin/custom/ide.sh'
+alias tm-dev='tm-dev.sh'
+alias tm-q='tm-q.sh'
+alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 alias l='exa -la --icons'
+alias tm='tmux'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -138,16 +142,52 @@ eval "`fnm env --use-on-cd`"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/parry/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/parry/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/parry/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/parry/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('/home/parry/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/parry/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/home/parry/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/parry/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# conda config --set auto_activate_base false
 # <<< conda initialize <<<
 
+#FLY IO
+export FLYCTL_INSTALL="/home/parry/.fly/bin"
+export PATH="$FLYCTL_INSTALL:$PATH"
+alias fly="flyctl"
+
+#BOB NEOVIM
+export BOB_NVIM="/home/parry/.local/share/neovim/bin"
+export PATH="$BOB_NVIM:$PATH"
+alias nv="nvim"
+
+#NEOVIDE
+alias nd="neovide --maximized"
+
+
+#GH ALIAS
+export GH_BASE="https://github.com/Parry-97"
+
+alias lg="lazygit"
+
+
+#PNPM ALIASES
+alias pn="pnpm"
+
+
+
+#LARAVEL
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+export LARAVEL_INSTALL="/home/parry/.config/composer/vendor/bin/"
+export PATH="$LARAVEL_INSTALL:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/parry/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+complete -C /usr/bin/terraform terraform

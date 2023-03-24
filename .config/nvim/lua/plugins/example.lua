@@ -168,8 +168,8 @@ return {
     opts = function(_, opts)
       -- add tsx and treesitter
       vim.list_extend(opts.ensure_installed, {
-        "tsx",
-        "typescript",
+          "tsx",
+          "typescript",
       })
     end,
   },
@@ -208,7 +208,7 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        -- "flake8",
+        "flake8",
       },
     },
   },
@@ -221,9 +221,6 @@ return {
       return {}
     end,
   },
-
-  -- { "akinsho/toggleterm.nvim", version = "*", config = true },
-
   -- then: setup supertab in cmp
   {
     "hrsh7th/nvim-cmp",

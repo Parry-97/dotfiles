@@ -10,3 +10,6 @@ end)
 vim.keymap.set("n", "<C-->", function()
   change_scale_factor(0.90)
 end)
+
+
+vim.g.neovide_transparency = 0.8
